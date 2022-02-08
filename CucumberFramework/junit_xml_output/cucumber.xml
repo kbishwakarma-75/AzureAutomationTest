@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="2" time="19.944247">
+    <testcase classname="Login Fucntion Test" name="Successful Login with Valid Credentials" time="19.942348">
+        <system-out><![CDATA[Given Open the Browser Successful Login.....................................passed
+When Enter the URL for Successful Login.....................................passed
+And Click on Sign up or Login Link Successful Login.........................passed
+And Enter Valid Username and Password Successful Login......................passed
+And Click on Login Button Successful Login..................................passed
+Then Verify User must see All Courses.......................................passed
+And Logout Successful.......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login Fucntion Test" name="Unsuccessful Login with Invalid Credentials" time="0.001899">
+        <skipped><![CDATA[Given User on Complete Test Automation Bundle Page..........................pending
+When Click on Sign In Link Unccessful Login.................................skipped
+And Enter Invalid Username and Password Unccessful Login....................skipped
+Then Verify Invlaid Message Displayed.......................................skipped
+And Close Application.......................................................skipped
+]]></skipped>
+    </testcase>
+</testsuite>
