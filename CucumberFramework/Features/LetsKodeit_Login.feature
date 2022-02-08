@@ -1,6 +1,5 @@
 Feature: Login Fucntion Test 
 	Description: This feature is to validate login functionality. 
-
 	#Background: Manual execution effort for automation metrics 
 	#Given Manual Execution Effort is 00:30:00
 		   

@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite" verbose="1" parallel="tests" thread-count="1" configfailurepolicy="continue">
+<test name="LetsCodeit_app" annotations="JDK" preserve-order="true">
+<classes>
+	<class name="myTestRunner.TestRunnerLetsKodeit"></class>
+</classes>
+</test>
+</suite>
