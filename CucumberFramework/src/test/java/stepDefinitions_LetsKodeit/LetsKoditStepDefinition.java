@@ -46,21 +46,12 @@ public class LetsKoditStepDefinition {
 		System.out.println("Assert Passed: click_on_Sign_up_or_Login_Link_Successful_Login");
 
 	}
-/*
-	@And("^Enter Valid Username and Password Successful Login$")
-	public void enter_Valid_Username_and_Password_Successful_Login() throws Throwable {
-		WebElement EmailAddress = driver.findElement(By.id("email"));
-		EmailAddress.sendKeys("test@email.com");
-		WebElement PasswordField = driver.findElement(By.id("password"));
-		PasswordField.sendKeys("abcabc");
-		System.out.println("Assert Passed: verify_User_must_see_All_Courses");
-	} */
 	
 	@When("^Enter Valid \"([^\"]*)\" and \"([^\"]*)\" Successful Login$")
 	public void enter_Valid_and_Successful_Login(String username, String password) throws Throwable {
 	   driver.findElement(By.id("email")).sendKeys(username);
 	   driver.findElement(By.id("password")).sendKeys(password);
-	   
+	   System.out.println("Assert Passed: email and password send sucessfully");
 	}
 
 
