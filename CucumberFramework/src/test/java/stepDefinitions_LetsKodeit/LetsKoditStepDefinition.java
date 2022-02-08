@@ -46,7 +46,7 @@ public class LetsKoditStepDefinition {
 		System.out.println("Assert Passed: click_on_Sign_up_or_Login_Link_Successful_Login");
 
 	}
-
+/*
 	@And("^Enter Valid Username and Password Successful Login$")
 	public void enter_Valid_Username_and_Password_Successful_Login() throws Throwable {
 		WebElement EmailAddress = driver.findElement(By.id("email"));
@@ -54,7 +54,15 @@ public class LetsKoditStepDefinition {
 		WebElement PasswordField = driver.findElement(By.id("password"));
 		PasswordField.sendKeys("abcabc");
 		System.out.println("Assert Passed: verify_User_must_see_All_Courses");
+	} */
+	
+	@When("^Enter Valid \"([^\"]*)\" and \"([^\"]*)\" Successful Login$")
+	public void enter_Valid_and_Successful_Login(String username, String password) throws Throwable {
+	   driver.findElement(By.id("email")).sendKeys(username);
+	   driver.findElement(By.id("password")).sendKeys(password);
+	   
 	}
+
 
 	@And("^Click on Login Button Successful Login$")
 	public void click_on_Login_Button_Successful_Login() throws Throwable {
@@ -81,37 +89,4 @@ public class LetsKoditStepDefinition {
 		driver.close();
 
 	}
-
-//Scenario: Unsuccessful Login with invalid Credentials----------------------------------------------
-
-	@Given("^User on Complete Test Automation Bundle Page$")
-	public void user_on_Complete_Test_Automation_Bundle_Page() throws Throwable {
-		System.out.println("Assert Passed: user_on_Complete_Test_Automation_Bundle_Page");
-		throw new PendingException();
-	}
-
-	@When("^Click on Sign In Link Unccessful Login$")
-	public void click_on_Sign_In_Link_Unccessful_Login() throws Throwable {
-		System.out.println("Assert Passed: click_on_Sign_In_Link_Unccessful_Login");
-		throw new PendingException();
-	}
-
-	@And("^Enter Invalid Username and Password Unccessful Login$")
-	public void enter_Invalid_Username_and_Password_Unccessful_Login() throws Throwable {
-		System.out.println("Assert Passed: enter_Invalid_Username_and_Password_Unccessful_Login");
-		throw new PendingException();
-	}
-
-	@Then("^Verify Invlaid Message Displayed$")
-	public void verify_Invlaid_Message_Displayed() throws Throwable {
-		System.out.println("Assert Passed: verify_Invlaid_Message_Displayed");
-		throw new PendingException();
-	}
-
-	@And("^Close Application$")
-	public void close_Application() throws Throwable {
-		System.out.println("Assert Passed: close_Application");
-		throw new PendingException();
-	}
-
 }

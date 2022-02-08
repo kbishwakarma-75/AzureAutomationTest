@@ -98,7 +98,7 @@
 					<testFailureIgnore>true</testFailureIgnore>
 					<shutdown>kill</shutdown>
 					<suiteXmlFiles>
-						<suiteXmlFile>C:\Users\kbish\eclipse-workspace\CucumberFrameworTestNG\testng.xml</suiteXmlFile>
+						<suiteXmlFile>C:\Users\kbish\git\AzureAutomationTest\CucumberFramework\testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
@@ -117,6 +117,7 @@
 							<projectName>MyProjectName</projectName>  <!-- Replace with project name -->
 							<outputDirectory>target/cucumber-reports/advanced-reports</outputDirectory>
 							<cucumberOutput>target/cucumber-reports/CucumberTestReport.json</cucumberOutput>
+							<cucumberOutput>target/cucumber-reports/CucumberTestReport.html</cucumberOutput>
 							<buildNumber>1</buildNumber>
 							<parallelTesting>false</parallelTesting>
 						</configuration>

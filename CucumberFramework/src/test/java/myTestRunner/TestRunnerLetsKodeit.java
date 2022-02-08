@@ -10,8 +10,6 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
-
-
 @CucumberOptions(
         features = "C:\\Users\\kbish\\git\\AzureAutomationTest\\CucumberFramework\\Features\\LetsKodeit_Login.feature",
         glue={"stepDefinitions_LetsKodeit"},
@@ -23,6 +21,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
                 "pretty",
                 "html:target/cucumber-reports/cucumber-pretty",
                 "json:target/cucumber-reports/CucumberTestReport.json",
+                "json:target/cucumber-reports/CucumberTestReport.html",
                 "rerun:target/cucumber-reports/rerun.txt"
         },plugin = "json:target/cucumber-reports/CucumberTestReport.json")
 
