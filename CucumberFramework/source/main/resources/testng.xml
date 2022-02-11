@@ -2,7 +2,7 @@
 <suite name="TestSuite" verbose="1" parallel="tests" thread-count="1" configfailurepolicy="continue">
 <test name="LetsCodeit_app" annotations="JDK" preserve-order="true">
 <classes>
-	<class name="myTestRunner.TestRunnerLetsKodeit"></class>
+	<class name="myTestRunner.TestRunner"></class>
 </classes>
 </test>
 </suite>

@@ -1,4 +1,4 @@
-package stepDefinitions_LetsKodeit;
+package stepDefinitions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
