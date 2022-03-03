@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" thread-count="1" parallel="tests" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="tests" name="LetsCodeit_app(failed)">
+    <classes>
+      <class name="myTestRunner.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- myTestRunner.TestRunner -->
+    </classes>
+  </test> <!-- LetsCodeit_app(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

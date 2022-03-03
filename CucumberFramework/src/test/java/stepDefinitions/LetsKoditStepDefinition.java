@@ -21,7 +21,7 @@ public class LetsKoditStepDefinition {
 	@Given("^Open the Browser Successful Login$")
 	public void open_the_Browser_Successful_Login()  throws Throwable {		
 		WebDriverManager.chromedriver().setup();
-		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\kbish\\eclipse-workspace\\drivers\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		//System.out.println("Title of Web Page is" + driver.getTitle());

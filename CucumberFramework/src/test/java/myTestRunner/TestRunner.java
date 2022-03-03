@@ -12,8 +12,8 @@ import cucumber.api.testng.TestNGCucumberRunner;
 
 @CucumberOptions(
 		features = 
-		{"C:\\Users\\kbish\\git\\AzureAutomationTest\\CucumberFramework\\Features\\LetsKodeit_Login.feature",
-		 "C:\\Users\\kbish\\git\\AzureAutomationTest\\CucumberFramework\\Features\\PracticeAutomation_Login.feature"},
+		{"/Users/krishnabishwakarma/git/AzureAutomationTest/CucumberFramework/Features/LetsKodeit_Login.feature"},
+		 //"/Users/krishnabishwakarma/git/AzureAutomationTest/CucumberFramework/Features/PracticeAutomation_Login.feature"},
 		 //"C:\\Users\\kbish\\git\\AzureAutomationTest\\CucumberFramework\\Features\\MyAccount.feature",
 		// "C:\\Users\\kbish\\git\\AzureAutomationTest\\CucumberFramework\\Features\\MyAccount-Login.feature"},
 		glue={"stepDefinitions"},
